@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detergente Quitamanchas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🧼 LimpiaFácil</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Políticas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="producto">
+    <section class="producto-detalle">
+      <div class="producto-imagenes">
+        <img src="https://via.placeholder.com/400x400?text=Producto+1" alt="Detergente principal">
+        <div class="galeria">
+          <img src="https://via.placeholder.com/100x100?text=Foto+1" alt="">
+          <img src="https://via.placeholder.com/100x100?text=Foto+2" alt="">
+          <img src="https://via.placeholder.com/100x100?text=Foto+3" alt="">
+        </div>
+      </div>
+
+      <div class="producto-info">
+        <h1>Detergente Quitamanchas en Segundos</h1>
+        <p class="precio">$29.900</p>
+        <p class="descripcion">
+          Nuestro potente detergente elimina manchas difíciles en ropa blanca y de color en tan solo segundos. Ideal para uso diario, seguro para toda la familia.
+        </p>
+
+        <ul class="beneficios">
+          <li>✔ Fórmula rápida y efectiva</li>
+          <li>✔ Agradable fragancia</li>
+          <li>✔ Seguro para todo tipo de telas</li>
+        </ul>
+
+        <a href="#formulario-compra" class="btn-primary">Comprar ahora</a>
+      </div>
+    </section>
+
+    <section class="formulario" id="formulario-compra">
+      <h2>Haz tu pedido</h2>
+      <form id="compraForm">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1" required>
+
+        <button type="submit" class="btn-primary">Enviar pedido</button>
+      </form>
+      <p id="respuesta"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LimpiaFácil. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
